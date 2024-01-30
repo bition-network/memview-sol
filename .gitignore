@@ -5,4 +5,21 @@ coverage/
 coverage.json
 .idea
 out/
+.env
 
+
+node_modules
+.env
+
+# Hardhat files
+/cache
+/cache_hardhat
+/artifacts
+
+# TypeChain files
+/typechain
+/typechain-types
+
+# solidity-coverage files
+/coverage
+/coverage.json
