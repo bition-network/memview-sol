@@ -1,10 +1,9 @@
 {
-  "name": "@summa-tx/memview-sol",
-  "version": "2.1.2",
+  "name": "@bition/memview-sol",
+  "version": "2.2.0",
   "description": "Raw memory access in solidity",
   "repository": {
-    "type": "git",
-    "url": "git@github.com:summa-tx/memview.sol.git"
+    "url": "https://github.com/bition-network/memview-sol"
   },
   "scripts": {
     "compile": "forge build",

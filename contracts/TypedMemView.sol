@@ -694,6 +694,7 @@ library TypedMemView {
     function clone(bytes29 memView) internal view returns (bytes memory ret) {
         uint256 ptr;
         uint256 _len = len(memView);
+        uint256 _footprint = footprint(memView);
         assembly {
             // solhint-disable-previous-line no-inline-assembly
             ptr := mload(0x40) // load unused memory pointer
@@ -704,7 +705,7 @@ library TypedMemView {
         }
         assembly {
             // solhint-disable-previous-line no-inline-assembly
-            mstore(0x40, add(add(ptr, _len), 0x20)) // write new unused pointer
+            mstore(0x40, add(add(ptr, _footprint), 0x20)) // write new unused pointer and padded
             mstore(ptr, _len) // write len of new array (in bytes)
         }
     }

@@ -9,11 +9,11 @@ This library is particularly useful for writing solidity parsers. It is
 currently used in [bitcoin-spv](https://github.com/summa-tx/bitcoin-spv) to
 parse and manipulate Bitcoin data structures.
 
-`npm i @summa-tx/memview-sol`
+`npm i @bition/memview-sol`
 
-### Using Solidity v0.8?
+### Using Solidity v0.8
 
-The [`latest-solidity`](https://github.com/summa-tx/memview-sol/pull/6) branch
+Merged the [`latest-solidity`](https://github.com/summa-tx/memview-sol/pull/6) branch
 can be installed as a forge dependency!
 
 ### Why does this exist?
